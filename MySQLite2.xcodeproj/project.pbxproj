@@ -14,6 +14,11 @@
 		5AFB750A1BB4E3A700C45A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB75081BB4E3A700C45A98 /* LaunchScreen.storyboard */; };
 		5AFB75151BB4E3A700C45A98 /* MySQLite2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB75141BB4E3A700C45A98 /* MySQLite2Tests.swift */; };
 		5AFB75201BB4E3A700C45A98 /* MySQLite2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB751F1BB4E3A700C45A98 /* MySQLite2UITests.swift */; };
+		5AFB75311BB4E3EB00C45A98 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB752F1BB4E3EB00C45A98 /* SQLiteDB.swift */; };
+		5AFB75321BB4E3EB00C45A98 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB75301BB4E3EB00C45A98 /* String-Extras.swift */; };
+		5AFB75341BB4E4DB00C45A98 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB75331BB4E4DB00C45A98 /* libsqlite3.0.tbd */; };
+		5AFB75381BB4E50D00C45A98 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB75371BB4E50D00C45A98 /* data.db */; };
+		64F1820E1D2A006A00CD78C3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1820D1D2A006A00CD78C3 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,12 @@
 		5AFB751B1BB4E3A700C45A98 /* MySQLite2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySQLite2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFB751F1BB4E3A700C45A98 /* MySQLite2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySQLite2UITests.swift; sourceTree = "<group>"; };
 		5AFB75211BB4E3A700C45A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFB752D1BB4E3DE00C45A98 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		5AFB752F1BB4E3EB00C45A98 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		5AFB75301BB4E3EB00C45A98 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		5AFB75331BB4E4DB00C45A98 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5AFB75371BB4E50D00C45A98 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		64F1820D1D2A006A00CD78C3 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFB75341BB4E4DB00C45A98 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,10 @@
 		5AFB74F31BB4E3A600C45A98 = {
 			isa = PBXGroup;
 			children = (
+				5AFB75331BB4E4DB00C45A98 /* libsqlite3.0.tbd */,
+				5AFB75371BB4E50D00C45A98 /* data.db */,
+				5AFB752D1BB4E3DE00C45A98 /* Bridging-Header.h */,
+				5AFB752E1BB4E3EB00C45A98 /* SQLiteDB */,
 				5AFB74FE1BB4E3A600C45A98 /* MySQLite2 */,
 				5AFB75131BB4E3A700C45A98 /* MySQLite2Tests */,
 				5AFB751E1BB4E3A700C45A98 /* MySQLite2UITests */,
@@ -103,6 +119,7 @@
 				5AFB75061BB4E3A700C45A98 /* Assets.xcassets */,
 				5AFB75081BB4E3A700C45A98 /* LaunchScreen.storyboard */,
 				5AFB750B1BB4E3A700C45A98 /* Info.plist */,
+				64F1820D1D2A006A00CD78C3 /* File.swift */,
 			);
 			path = MySQLite2;
 			sourceTree = "<group>";
@@ -123,6 +140,15 @@
 				5AFB75211BB4E3A700C45A98 /* Info.plist */,
 			);
 			path = MySQLite2UITests;
+			sourceTree = "<group>";
+		};
+		5AFB752E1BB4E3EB00C45A98 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB752F1BB4E3EB00C45A98 /* SQLiteDB.swift */,
+				5AFB75301BB4E3EB00C45A98 /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFB750A1BB4E3A700C45A98 /* LaunchScreen.storyboard in Resources */,
+				5AFB75381BB4E50D00C45A98 /* data.db in Resources */,
 				5AFB75071BB4E3A700C45A98 /* Assets.xcassets in Resources */,
 				5AFB75051BB4E3A700C45A98 /* Main.storyboard in Resources */,
 			);
@@ -255,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F1820E1D2A006A00CD78C3 /* File.swift in Sources */,
+				5AFB75311BB4E3EB00C45A98 /* SQLiteDB.swift in Sources */,
+				5AFB75321BB4E3EB00C45A98 /* String-Extras.swift in Sources */,
 				5AFB75021BB4E3A700C45A98 /* ViewController.swift in Sources */,
 				5AFB75001BB4E3A600C45A98 /* AppDelegate.swift in Sources */,
 			);
@@ -399,9 +429,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MySQLite2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hangge.MySQLite2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -410,9 +442,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MySQLite2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hangge.MySQLite2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -483,6 +517,7 @@
 				5AFB75261BB4E3A700C45A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AFB75271BB4E3A700C45A98 /* Build configuration list for PBXNativeTarget "MySQLite2Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +526,7 @@
 				5AFB75291BB4E3A700C45A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AFB752A1BB4E3A700C45A98 /* Build configuration list for PBXNativeTarget "MySQLite2UITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +535,7 @@
 				5AFB752C1BB4E3A700C45A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

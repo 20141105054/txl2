@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MySQLite2
+//  CC
 //
-//  Created by yuhang on 15/9/25.
+//  Created by yuhang on 15/9/16.
 //  Copyright © 2015年 yuhang. All rights reserved.
 //
 
